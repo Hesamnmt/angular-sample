@@ -1,5 +1,5 @@
 <!-- <mat-list></mat-list> -->
-<!-- <div class="all">
+<div class="all">
   <div class="all-body">
   <div *ngIf="users.length > 0">
       <h2>Users</h2>
@@ -9,15 +9,14 @@
       </li>
       </ul>
   </div>
-  <br> -->
+  <br>
   <div id="create-form">
     <h1>Creating User</h1>
-    <form [formGroup]="myForm" (ngSubmit)="onSubmitForCreateUser()">
+    <form class="form-job" [formGroup]="myForm" (ngSubmit)="onSubmitForCreateUser()">
       <mat-form-field>
         <mat-label>Name:</mat-label>
         <input matInput id="name" formControlName="name">
       </mat-form-field>
-    
       <mat-form-field>
         <mat-label>Job:</mat-label>
         <input matInput id="job" formControlName="job">
@@ -28,10 +27,10 @@
   <br><br>
   <button (click)="toggleCreateForm()">Login</button>
   <div id="create-form" *ngIf="showCreateForm">
-    <div id="all-component">
+    <div id="all-component" class="registarition-class">
       <h2>Login & Register</h2>
-      <div id="conteiner">
-          <div id="login-card">
+      <div class="conteiner">
+          <div class="login-card">
               <mat-card>
                   <mat-card-header>
                       <mat-card-title>Login</mat-card-title>
@@ -47,14 +46,14 @@
                               <mat-form-field>
                               <mat-label>Password:</mat-label>
                               <input matInput id="password" formControlName="password">
-                              </mat-form-field>
+                              </mat-form-field><br>
                               <button mat-flat-button	color="primary" type="submit" [disabled]="loginForm.invalid">Login</button>
                           </form>
                           </div>
                   </mat-card-actions>
               </mat-card>
           </div>
-          <div id="register-card">
+          <div class="register-card">
               <mat-card>
                   <mat-card-header>
                       <mat-card-title>Register</mat-card-title>
@@ -70,7 +69,7 @@
                               <mat-form-field>
                               <mat-label>Password:</mat-label>
                               <input matInput id="password" formControlName="password">
-                              </mat-form-field>
+                              </mat-form-field><br>
                               <button mat-flat-button	color="primary" type="submit" [disabled]="registerForm.invalid">Register</button>
                           </form>
                           </div>

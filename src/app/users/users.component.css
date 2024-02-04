@@ -26,18 +26,36 @@ mat-card {
     background-color: #A47963;
 }
 
-#conteiner {
+
+.conteiner {
     display: flex;
+    flex-direction: row;
 }
 
 #register-card {
     flex: 50%;
 }
 
-#login-card {
+.login-card {
+    flex: 50%;
+}
+.register-card {
     flex: 50%;
 }
 
 h1,h2,h3,h4,h5,h6 {
     color:#27213C;
+}
+
+@media screen and (max-width:1024px) {
+    .conteiner {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .conteiner {
+        flex-direction: column;
+
+    }
 }

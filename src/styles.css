@@ -21,10 +21,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     background-color: #A6A57A;
     
 }
-.bg-light {
+/* .bg-light {
     --bs-bg-opacity: 0;
     background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
-}
+} */
 button {
     padding: 10px;
     background-color: #5A352A;
@@ -42,7 +42,7 @@ button:hover {
 }
 
 
-/* #navbarNav{
+#navbarNav{
     background-color: #A33B20;
     margin: 5px;
     padding: 10px;
@@ -62,4 +62,4 @@ button:hover {
 .bg-body-tertiary {
     --bs-bg-opacity: 0;
     background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
-} */
+}
