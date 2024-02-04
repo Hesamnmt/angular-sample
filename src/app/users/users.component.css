@@ -1,0 +1,43 @@
+
+
+li{
+    color: #A33B20;
+}
+
+#create-user-btn {
+    margin-top: 10%;
+}
+
+#create-form {
+    margin-top: 10%;
+}
+
+mat-form-field{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+mat-form-field {
+    margin: 10px;
+}
+
+mat-card {
+    margin: 10px;
+    background-color: #A47963;
+}
+
+#conteiner {
+    display: flex;
+}
+
+#register-card {
+    flex: 50%;
+}
+
+#login-card {
+    flex: 50%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color:#27213C;
+}

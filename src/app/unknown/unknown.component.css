@@ -1,0 +1,43 @@
+.table-class{
+    margin: 15px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.mat-paginator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.mat-paginator-range-label {
+    margin: 0 10px;
+}
+
+.mat-paginator-navigation-previous, .mat-paginator-navigation-next {
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.mat-paginator-page-size-label {
+    margin-right: 10px;
+}
+
+.mat-select-value {
+    color: #2196F3; /* Change the color to your preference */
+}

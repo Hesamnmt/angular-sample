@@ -1,0 +1,50 @@
+<div class="all">
+    <div>
+        <header>
+            <nav id="nav-all" class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/users']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Users</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/test']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Test</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/unknown']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Unknown</a>
+                </li>
+                </ul>
+            </div>
+            </nav>
+        </header>
+    </div>
+<router-outlet></router-outlet>
+</div>
+
+<!-- <nav id="nav-all" class="navbar navbar-expand-lg bg-body-tertiary">
+    <div id="navbarNav" class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/users']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Users</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/test']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">test</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/unknown']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Unknown</a>
+        </li>
+        </ul>
+    </div>
+    </div>
+</nav> -->
