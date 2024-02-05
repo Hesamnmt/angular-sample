@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: 'users', component: UsersComponent },
   { path: 'test' , component: TestComponent},
   { path: 'unknown', component: UnknownComponent },
+  { path: 'lazy-users', loadChildren: () => import('./users/users/users.module').then(m => m.UsersModule) },
   // { path: 'contact', component: ContactComponent },
 ];
 @NgModule({

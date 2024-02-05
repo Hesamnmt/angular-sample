@@ -1,23 +1,19 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { UserService } from '../user.service';
-import { ICreateUser, ILoginRegister, IUserData, IUserInfo } from '../interfaces/users.model';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ICreateUser, ILoginRegister, IUserInfo } from 'src/app/interfaces/users.model';
+import { LoginService } from 'src/app/login.service';
+import { NotificationsService } from 'src/app/notifications.service';
+import { StylesService } from 'src/app/styles.service';
+import { UserService } from 'src/app/user.service';
 import { tap } from 'rxjs/operators'
-import {MatDividerModule} from '@angular/material/divider';
-import {MatListModule} from '@angular/material/list';
-import { NotificationsService } from '../notifications.service';
-import { LoginService } from '../login.service';
-import { StylesService } from '../styles.service';
-import { map, filter, shareReplay, take, takeWhile } from 'rxjs/operators';
-
-
 
 @Component({
   selector: 'app-users',
-  templateUrl:  './users.component.html',
-  styleUrls: ['./users.component.css'],
+  templateUrl: './users.component.html',
+  styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
+
   @ViewChild('loginFormRef') loginFormRef!: ElementRef;
 
 
@@ -128,4 +124,5 @@ export class UsersComponent implements OnInit {
     return this.stylesService.getColorClass(color);
   }
 }
+
 

@@ -1,0 +1,86 @@
+<p>users lazy works!</p>
+<!-- <mat-list></mat-list> -->
+<div class="all">
+    <div class="all-body">
+    <div *ngIf="users.length > 0">
+        <h2>Users</h2>
+        <ul>
+          <li *ngFor="let user of users">
+            {{ user.first_name }} {{ user.last_name }} - {{ user.email }}
+        </li>
+        </ul>
+    </div>
+    <br>
+    <div id="create-form">
+      <h1>Creating User</h1>
+      <form class="form-job" [formGroup]="myForm" (ngSubmit)="onSubmitForCreateUser()">
+        <mat-form-field>
+          <mat-label>Name:</mat-label>
+          <input matInput id="name" formControlName="name">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Job:</mat-label>
+          <input matInput id="job" formControlName="job">
+        </mat-form-field>
+        <button mat-flat-button	color="primary" type="submit" [disabled]="myForm.invalid">Create</button>
+      </form>
+    </div>
+    <br><br>
+    <button (click)="toggleCreateForm()">Login</button>
+    <div id="create-form" *ngIf="showCreateForm">
+      <div id="all-component" class="registarition-class">
+        <h2>Login & Register</h2>
+        <div class="conteiner">
+            <div class="login-card">
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title>Login</mat-card-title>
+                        <mat-card-subtitle>if you have an account Clik</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-actions>
+                        <div id="login-form">
+                            <form [formGroup]="loginForm" (ngSubmit)="onSubmitForLogin()">
+                                <mat-form-field>
+                                <mat-label>Email:</mat-label>
+                                <input matInput id="email" formControlName="email">
+                                </mat-form-field>
+                                <mat-form-field>
+                                <mat-label>Password:</mat-label>
+                                <input matInput id="password" formControlName="password">
+                                </mat-form-field><br>
+                                <button mat-flat-button	color="primary" type="submit" [disabled]="loginForm.invalid">Login</button>
+                            </form>
+                            </div>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+            <div class="register-card">
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title>Register</mat-card-title>
+                        <mat-card-subtitle>if you do not have an account Clik</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-actions>
+                        <div id="register-form">
+                            <form [formGroup]="registerForm" (ngSubmit)="onSubmitForRegister()">
+                                <mat-form-field>
+                                <mat-label>Email:</mat-label>
+                                <input matInput id="email" formControlName="email">
+                                </mat-form-field>
+                                <mat-form-field>
+                                <mat-label>Password:</mat-label>
+                                <input matInput id="password" formControlName="password">
+                                </mat-form-field><br>
+                                <button mat-flat-button	color="primary" type="submit" [disabled]="registerForm.invalid">Register</button>
+                            </form>
+                            </div>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+    </div>
+  <!-- </div> -->
+  <!-- </div> -->
+  
+  
