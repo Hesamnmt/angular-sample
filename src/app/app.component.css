@@ -2,3 +2,13 @@
 a{
     color: white;
 }
+
+.custom-button {
+    background-color: green; /* Change to your desired color */
+    color: white; /* Text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0;
+}

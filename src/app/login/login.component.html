@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-card">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>Login</mat-card-title>
+            </mat-card-header>
+            <mat-card-actions>
+                <div id="login-form">
+                    <form >
+                        <mat-form-field *ngIf="!submitted">
+                        <mat-label>Email:</mat-label>
+                        <input matInput id="email" formControlName="email">
+                        </mat-form-field>
+                        <mat-form-field *ngIf="!submitted">
+                        <mat-label>Password:</mat-label>
+                        <input matInput id="password" formControlName="password">
+                        </mat-form-field><br>
+                        <button mat-flat-button	color="primary" type="submit">Login</button>
+                    </form>
+                    </div>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</body>
+</html>

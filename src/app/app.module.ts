@@ -23,6 +23,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 import { TableDialogComponent } from './table-dialog/table-dialog.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -42,6 +43,7 @@ import { TableDialogComponent } from './table-dialog/table-dialog.component';
     TestComponent,
     UnknownComponent,
     TableDialogComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

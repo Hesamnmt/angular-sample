@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button{
+    width: 100%;
+}
+mat-label{
+    color: black;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.mat-form-field-wrapper {
+    opacity: 1;
+    visibility: visible;
+}
+mat-form-field input {
+    visibility: visible !important;
+}
